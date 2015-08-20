@@ -83,7 +83,7 @@
 #' @rdname getQuote.BATS
 getQuote.BATS <- function(Symbols, 
                           what=c("bats", "bbo", "ladder", "depth", "trades"), #, "most.active"), 
-                          exch=c("bzx", "byx", "opt")) {
+                          exch=c("bzx", "byx", "opt", "edgx", "edga")) {
   #require(RJSONIO) # added at top of script; fromJSON will be Imported from RJSONIO in NAMESPACE
   what <- tolower(what)
   exch <- tolower(exch)
