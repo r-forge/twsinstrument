@@ -83,7 +83,7 @@
 #' @rdname getQuote.BATS
 getQuote.BATS <- function(Symbols, 
                           what=c("bats", "bbo", "ladder", "depth", "trades"), #, "most.active"), 
-                          exch=c("bzx", "byx", "opt", "edgx", "edga")) {
+                          exch=c("bzx", "byx", "edgx", "edga", "opt")) {
   #require(RJSONIO) # added at top of script; fromJSON will be Imported from RJSONIO in NAMESPACE
   what <- tolower(what)
   exch <- tolower(exch)
@@ -139,6 +139,43 @@ getQuote.BATS <- function(Symbols,
 #' @export
 #' @rdname getQuote.BATS
 getQuote.bats <- getQuote.BATS
+
+#' @export
+#' @rdname getQuote.BATS
+getQuote.baty <- function(Symbols, 
+                          what=c("bats", "bbo", "ladder", "depth", "trades"), #, "most.active"), 
+                          exch="byx") {
+  getQuote.BATS(Symbols, what=what, exch=exch)
+}
+
+#' @export
+#' @rdname getQuote.BATS
+getQuote.BATY <- getQuote.baty
+
+#' @export
+#' @rdname getQuote.BATS
+getQuote.edgx <- function(Symbols, 
+                          what=c("bats", "bbo", "ladder", "depth", "trades"), #, "most.active"), 
+                          exch="edgx") {
+  getQuote.BATS(Symbols, what=what, exch=exch)
+}
+
+#' @export
+#' @rdname getQuote.BATS
+getQuote.EDGX <- getQuote.edgx
+
+#' @export
+#' @rdname getQuote.BATS
+getQuote.edga <- function(Symbols, 
+                          what=c("bats", "bbo", "ladder", "depth", "trades"), #, "most.active"), 
+                          exch="edga") {
+  getQuote.BATS(Symbols, what=what, exch=exch)
+}
+
+#' @export
+#' @rdname getQuote.BATS
+getQuote.EDGA <- getQuote.edga
+
 
 # benchmarking -----
 

@@ -13,7 +13,8 @@ shinyUI(pageWithSidebar(
       ),
       selectInput(inputId="exch",
                   label="Exchange:",
-                  choices=c("bzx"="bzx", "byx"="byx"))
+                  choices=c("bzx"="bzx", "byx"="byx", "edgx"="edgx", 
+                            "edga"="edga"))
  
     ) #,
       #submitButton("Update")
