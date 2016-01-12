@@ -15,4 +15,5 @@ NULL
 #' @importFrom pander pandoc.table
 #' @importFrom shiny runApp
 #' @importFrom RCurl getURL postForm
+#' @importFrom gdata trim read.xls
 NULL

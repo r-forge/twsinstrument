@@ -9,7 +9,6 @@ Depends:
     xts,
     quantmod (>= 0.3.22),
     FinancialInstrument (>= 0.10.0),
-    gdata,
     XML (>= 3.96-1.1)
 Suggests:
     timeDate,
@@ -17,6 +16,7 @@ Suggests:
 Imports:
     RCurl,
     RJSONIO,
+    gdata,
     pander,
     shiny (>= 0.6.0)
 Maintainer: Garrett See <gsee000@gmail.com>
